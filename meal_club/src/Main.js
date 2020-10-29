@@ -1,33 +1,64 @@
 import React, { Component } from "react";
-import {
-  Route,
-  NavLink,
-  HashRouter
-} from "react-router-dom";
 import Home from "./Home";
-import Stuff from "./Stuff";
+import About from "./About";
 import Contact from "./Contact";
 import Button from '@material-ui/core/Button';
- 
+import Box from '@material-ui/core/Box';
+import TextField from '@material-ui/core/TextField';
+
+import Paper from '@material-ui/core/Paper';
+import {
+  AppBar, Toolbar, Typography
+} from '@material-ui/core';
+import { HashRouter, Route, NavLink, Link } from "react-router-dom";
+
+import Image from '/Users/aakankshasaxena/Documents/Senior/Ignite/Meal-Club/meal_club/src/images/food_background.jpeg'; 
+import RestaurantMenuIcon from '@material-ui/icons/RestaurantMenu';
+
+const styles = {
+    paperContainer: {
+        backgroundImage: `url(${Image})`,
+        height:750,
+        alignItems: "center",
+        display: "flex",
+        justifyContent: "center",
+        color: "white"
+    }
+};
+
+/* <img src={"/Users/aakankshasaxena/Documents/Senior/Ignite/Meal-Club/meal_club/src/images/meal_club_2.png"} alt="logo"/>*/
 class Main extends Component {
+
   render() {
     return (
-      <HashRouter>
-        <div>
-          <Button color='inherit'> Submit </Button>
+      <div>
+        <AppBar position="absolute">
+          <Toolbar>
           <h1>Meal Club</h1>
-          <ul className="header">
-            <li><NavLink to="/">Home</NavLink></li>
-            <li><NavLink to="/stuff">Stuff</NavLink></li>
-            <li><NavLink to="/contact">Contact</NavLink></li>
-          </ul>
-          <div className="content">
-            <Route exact path="/" component={Home}/>
-            <Route path="/stuff" component={Stuff}/>
-            <Route path="/contact" component={Contact}/>
-          </div>
-        </div>
-      </HashRouter>
+
+          <Box pl={1}><RestaurantMenuIcon/></Box>
+           <HashRouter>
+            <Box pl={3}><Button><NavLink to="/" style={{color: 'white'}}>Home</NavLink></Button></Box>
+            <Box pl={3}><Button><NavLink to="/about" style={{color: 'white'}}>About</NavLink></Button></Box>
+            <Box pl={3}><Button><NavLink to="/contact" style={{color: 'white'}}>Contact</NavLink></Button></Box>
+        </HashRouter>
+        </Toolbar>
+        </AppBar>
+        <Paper style={styles.paperContainer}>
+          <div>
+            <Typography variant="h1"> Meal Club</Typography> 
+            <TextField
+                variant="outlined"
+                color="white"
+                margin="normal"
+                required
+                fullWidth
+                label="Address"
+                autoFocus
+              />
+            </div>
+        </Paper>
+      </div>
     );
   }
 }

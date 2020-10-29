@@ -1,7 +1,10 @@
 body {
-  background-color: #00d9ff; /* #FFCC00;*/ 
+  background-color: #cfe4ff; /*#00d9ff;*/ /* #FFCC00;*/ 
   padding: 20px;
   margin: 0;
+}
+logo: {
+    maxWidth: 160,
 }
 h1, h2, p, ul, li {
   font-family: sans-serif;
