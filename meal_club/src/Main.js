@@ -7,12 +7,14 @@ import {
 import Home from "./Home";
 import Stuff from "./Stuff";
 import Contact from "./Contact";
+import Button from '@material-ui/core/Button';
  
 class Main extends Component {
   render() {
     return (
       <HashRouter>
         <div>
+          <Button color='inherit'> Submit </Button>
           <h1>Meal Club</h1>
           <ul className="header">
             <li><NavLink to="/">Home</NavLink></li>
