@@ -12,7 +12,7 @@ import {
 } from '@material-ui/core';
 import { HashRouter, Route, NavLink, Link } from "react-router-dom";
 
-import Image from '/Users/aakankshasaxena/Documents/Senior/Ignite/Meal-Club/meal_club/src/images/food_background.jpeg'; 
+import Image from "/Users/kenfeldman/Meal-Club/meal_club/src/images/food_background.jpeg";
 import RestaurantMenuIcon from '@material-ui/icons/RestaurantMenu';
 
 const styles = {
@@ -40,7 +40,8 @@ class Main extends Component {
            <HashRouter>
             <Box pl={3}><Button><NavLink to="/" style={{color: 'white'}}>Home</NavLink></Button></Box>
             <Box pl={3}><Button><NavLink to="/about" style={{color: 'white'}}>About</NavLink></Button></Box>
-            <Box pl={3}><Button><NavLink to="/contact" style={{color: 'white'}}>Contact</NavLink></Button></Box>
+            <Box pl={3}><Button><NavLink to="/Contact" style={{color: 'white'}}>Contact</NavLink></Button></Box>
+            <Box pl={3}><Button><NavLink to="/LoginRegister" style={{color: 'white'}}>Log In</NavLink></Button></Box>
         </HashRouter>
         </Toolbar>
         </AppBar>
