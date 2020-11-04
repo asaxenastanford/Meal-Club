@@ -12,7 +12,7 @@ import {
 } from '@material-ui/core';
 import { HashRouter, Route, NavLink, Link } from "react-router-dom";
 
-import Image from "/Users/kenfeldman/Meal-Club/meal_club/src/images/food_background.jpeg";
+import Image from './food_background.jpeg'
 import RestaurantMenuIcon from '@material-ui/icons/RestaurantMenu';
 
 const styles = {
@@ -26,7 +26,6 @@ const styles = {
     }
 };
 
-/* <img src={"/Users/aakankshasaxena/Documents/Senior/Ignite/Meal-Club/meal_club/src/images/meal_club_2.png"} alt="logo"/>*/
 class Main extends Component {
 
   render() {
