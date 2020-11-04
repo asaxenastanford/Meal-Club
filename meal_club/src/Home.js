@@ -1,19 +1,37 @@
 import React, { Component } from "react";
+import Paper from '@material-ui/core/Paper';
+import {Typography} from '@material-ui/core';
+import TextField from '@material-ui/core/TextField';
+import Image from './food_background.jpeg'
+
+const styles = {
+    paperContainer: {
+        backgroundImage: `url(${Image})`,
+        height:750,
+        alignItems: "center",
+        display: "flex",
+        justifyContent: "center",
+        color: "white"
+    }
+};
  
 class Home extends Component {
   render() {
     return (
-      <div>
-        <h2>HELLO</h2>
-        <p>Cras facilisis urna ornare ex volutpat, et
-        convallis erat elementum. Ut aliquam, ipsum vitae
-        gravida suscipit, metus dui bibendum est, eget rhoncus nibh
-        metus nec massa. Maecenas hendrerit laoreet augue
-        nec molestie. Cum sociis natoque penatibus et magnis
-        dis parturient montes, nascetur ridiculus mus.</p>
- 
-        <p>Duis a turpis sed lacus dapibus elementum sed eu lectus.</p>
-      </div>
+      <Paper style={styles.paperContainer}>
+        <div>
+          <Typography variant="h1"> Meal Club</Typography> 
+          <TextField
+              variant="outlined"
+              color="white"
+              margin="normal"
+              required
+              fullWidth
+              label="Address"
+              autoFocus
+            />
+          </div>
+      </Paper>
     );
   }
 }
