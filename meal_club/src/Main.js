@@ -14,7 +14,7 @@ class Main extends Component {
   render() {
     return (
       <HashRouter>
-        <div>
+
           <AppBar position="absolute">
             <Toolbar>
             <h1>Meal Club</h1>
@@ -30,7 +30,7 @@ class Main extends Component {
             <Route path="/about" component={About}/>
             <Route path="/contact" component={Contact}/>
           </div>
-        </div>
+
       </HashRouter>
     );
   }
