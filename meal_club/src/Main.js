@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
+import LoginRegister from "./LoginRegister"
 import Button from '@material-ui/core/Button';
 import Box from '@material-ui/core/Box';
 import {AppBar, Toolbar} from '@material-ui/core';
@@ -29,6 +30,7 @@ class Main extends Component {
             <Route path="/" component={Home}/>
             <Route path="/about" component={About}/>
             <Route path="/contact" component={Contact}/>
+            <Route path="/LoginRegister" component={LoginRegister}/>
           </div>
 
       </HashRouter>

@@ -8,8 +8,8 @@ class LoginRegister extends React.Component {
   constructor(props) {
     super(props);
     this.state = {username:"",password:""};
-    this.setUsername = this.changeUsername.bind(this);
-    this.setPassword = this.changePassword.bind(this);
+    this.setUsername = this.setUsername.bind(this);
+    this.setPassword = this.setPassword.bind(this);
   }
 
   setUsername(event){
