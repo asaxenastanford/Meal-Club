@@ -3,6 +3,7 @@ import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
 import LoginRegister from "./LoginRegister"
+import RestaurantsBrowse from "./RestaurantsBrowse"
 import Button from '@material-ui/core/Button';
 import Box from '@material-ui/core/Box';
 import {AppBar, Toolbar} from '@material-ui/core';
@@ -24,6 +25,7 @@ class Main extends Component {
             <Box pl={3}><Button><NavLink to="/about" style={{color: 'white'}}>About</NavLink></Button></Box>
             <Box pl={3}><Button><NavLink to="/Contact" style={{color: 'white'}}>Contact</NavLink></Button></Box>
             <Box pl={3}><Button><NavLink to="/LoginRegister" style={{color: 'white'}}>Log In</NavLink></Button></Box>
+            <Box pl={3}><Button><NavLink to="/RestaurantsBrowse" style={{color: 'white'}}>Restaurants Browse</NavLink></Button></Box>
           </Toolbar>
           </AppBar>
           <div className="content">
@@ -31,6 +33,7 @@ class Main extends Component {
             <Route path="/about" component={About}/>
             <Route path="/contact" component={Contact}/>
             <Route path="/LoginRegister" component={LoginRegister}/>
+            <Route path="/RestaurantsBrowse" component={RestaurantsBrowse}/>
           </div>
 
       </HashRouter>
