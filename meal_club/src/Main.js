@@ -16,7 +16,7 @@ class Main extends Component {
     return (
       <HashRouter>
 
-          <AppBar position="absolute">
+          <AppBar position="sticky">
             <Toolbar>
             <h1>Meal Club</h1>
             <Box pl={1}><RestaurantMenuIcon/></Box>
@@ -27,7 +27,7 @@ class Main extends Component {
           </Toolbar>
           </AppBar>
           <div className="content">
-            <Route path="/" component={Home}/>
+            <Route exact path={["/","/home"]} component={Home}/>
             <Route path="/about" component={About}/>
             <Route path="/contact" component={Contact}/>
             <Route path="/LoginRegister" component={LoginRegister}/>
