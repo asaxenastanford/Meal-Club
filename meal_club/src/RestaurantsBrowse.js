@@ -6,7 +6,12 @@ import {
 import Grid from '@material-ui/core/Grid';
 import InfiniteScroll from "react-infinite-scroll-component";
 import { withStyles } from '@material-ui/core/styles';
-import OrensImage from './images/orensspread.jpg'
+import OrensImage from './images/orensspread.jpg';
+import ZareensImage from './images/zareens.jpg';
+import BareBowlsImage from './images/barebowls.jpg'
+import PokeImage from './images/poke.jpg'
+import PizzaImage from './images/pizza.jpg'
+import BurgerImage from './images/creameryBurger.jpg'
 
 
 import { makeStyles } from '@material-ui/core/styles';
@@ -40,11 +45,11 @@ class RestaurantsBrowse extends Component {
         <Typography component="h1" variant="h5" style={{marginBottom: '1em'}}>Local Restaurants</Typography>
         <Grid container>
             <RestaurantCard image={OrensImage} title={"Oren's Hummus"} description={"Cozy Mediterranean eatery serving housemade hummus with falafel or meats, plus sides & sauces."} />
-            <RestaurantCard image={OrensImage} title={"Oren's Hummus"} description={"Cozy Mediterranean eatery serving housemade hummus with falafel or meats, plus sides & sauces."} />
-            <RestaurantCard image={OrensImage} title={"Oren's Hummus"} description={"Cozy Mediterranean eatery serving housemade hummus with falafel or meats, plus sides & sauces."} />
-            <RestaurantCard image={OrensImage} title={"Oren's Hummus"} description={"Cozy Mediterranean eatery serving housemade hummus with falafel or meats, plus sides & sauces."} />
-            <RestaurantCard image={OrensImage} title={"Oren's Hummus"} description={"Cozy Mediterranean eatery serving housemade hummus with falafel or meats, plus sides & sauces."} />
-            <RestaurantCard image={OrensImage} title={"Oren's Hummus"} description={"Cozy Mediterranean eatery serving housemade hummus with falafel or meats, plus sides & sauces."} />
+            <RestaurantCard image={ZareensImage} title={"Zareens"} description={"Cozy, colorful kitchen presenting contemporary takes on classic Pakistani & Indian fare."} />
+            <RestaurantCard image={BareBowlsImage} title={"Bare Bowls"} description={"Casual cafe for bowls of acai, granola & other raw & sustainably sourced goods, plus smoothies."} />
+            <RestaurantCard image={PokeImage} title={"Poke House"} description={"Delicious, fresh, colorful poke."} />
+            <RestaurantCard image={PizzaImage} title={"Terun"} description={"Refined pizzeria with patio featuring Italian eats & Neapolitan pies alongside wine list & full bar"} />
+            <RestaurantCard image={BurgerImage} title={"Palo Alto Creamery"} description={"Retro-style diner known for its milkshakes, also serving a full menu of classic American fare."} />
 
         </Grid>
       </div>
