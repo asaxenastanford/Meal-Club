@@ -36,3 +36,12 @@ ul.header li a {
 .content li {
   margin-bottom: 10px;
 }
+
+.photo {
+  height: 200px;
+  width: 300px;
+}
+
+.contact-form {
+  margin-right: 400px;
+}

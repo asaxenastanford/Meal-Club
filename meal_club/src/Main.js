@@ -25,7 +25,7 @@ class Main extends Component {
             <Box pl={3}><Button><NavLink to="/about" style={{color: 'white'}}>About</NavLink></Button></Box>
             <Box pl={3}><Button><NavLink to="/Contact" style={{color: 'white'}}>Contact</NavLink></Button></Box>
             <Box pl={3}><Button><NavLink to="/LoginRegister" style={{color: 'white'}}>Log In</NavLink></Button></Box>
-            <Box pl={3}><Button><NavLink to="/RestaurantsBrowse" style={{color: 'white'}}>Restaurants Browse</NavLink></Button></Box>
+            <Box pl={3}><Button><NavLink to="/RestaurantsBrowse" style={{color: 'white'}}>Browse Restaurants</NavLink></Button></Box>
           </Toolbar>
           </AppBar>
           <div className="content">

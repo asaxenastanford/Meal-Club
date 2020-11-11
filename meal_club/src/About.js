@@ -11,11 +11,20 @@ import List from '@material-ui/core/List';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItem from '@material-ui/core/ListItem';
+import TeamPic from './images/team_pic.jpg';
+import Box from '@material-ui/core/Box';
+import PizzaImage from './images/food_spread.jpg'
+
+
+import "./index.css";
+
 
 const styles = {
   description: {
-      backgroundImage: `url(${Image1})`,
-      height: 500,
+      backgroundImage: `url(${PizzaImage})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      height: 600,
       alignItems: "left",
       display: "flex",
       justifyContent: "center",
@@ -26,7 +35,8 @@ const styles = {
       alignItems: "center",
       display: "flex",
       justifyContent: "center",
-      color: "blue"
+      color: "blue",
+      fontWeight: "bold",
   },
   whyMealClub: {
     height: 500,
@@ -34,7 +44,32 @@ const styles = {
     display: "flex",
     justifyContent: "center",
     color: "blue"
-  }
+  },
+
+  headerText: {
+    marginRight: '400px',
+    marginLeft: '25px',
+    marginTop: '40px'
+  },
+
+  howItWorks: {
+    fontWeight: 'bold',
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    fontFamily: "Helvetica Neue",
+    marginLeft: '250px'
+  },
+
+  whoWeAre: {
+    alignItems: 'center',
+    display: "flex",
+    justifyContent: "center",
+    height: 500,
+    flex:1, 
+    flexDirection:'column'
+  } 
+
 };
 
 
@@ -44,22 +79,19 @@ class About extends Component{
       <div>
         <Paper style={styles.description}>
           <div>
-            <Typography variant="h2">Order flexible and delicious 
-            meal plans with your friends. </Typography> 
-            <p>Meal Club offers meal subscriptions from your favorite local restaurants
-              at unbeatable prices. We are redesigning the system of meal delivery to be 
-              more efficient, affordable, and sustainable for you and for small business restaurants.
-            </p>
-            </div>
+          <Box style={styles.headerText} style={{marginTop: '2em'}} fontStyle="italic" fontSize="h3.fontSize">Order flexible and delicious meal </Box>
+          <Box style={styles.headerText} fontStyle="italic" fontSize="h3.fontSize">plans with your friends.</Box>
+            
+          </div>
         </Paper>
         <Paper style={styles.whatWeDo}>
           <div>
-            <Typography variant="h2">How It Works</Typography>
-            <Typography variant="h8">Easy | Convenient | Affordable</Typography>
+            <Typography fontWeight="bold" variant="h2" style={{display: "flex", justifyContent: "center", alignItems: "center"}}>How It Works</Typography>
+            <Typography variant="h8" style={{display: "flex", justifyContent: "center", alignItems: "center"}}>Easy | Convenient | Affordable</Typography>
             <List>
                 <div>
                 <ListItem>
-                  <ListItemIcon style={{ fontSize: 40 }}>
+                  <ListItemIcon style={{ fontSize: 60 }}>
                     <FastfoodIcon />
                   </ListItemIcon>
                   <ListItemText
@@ -89,7 +121,10 @@ class About extends Component{
             </List>
           </div>
         </Paper>
-
+        <Paper variant="outlined" style={styles.whoWeAre}>
+        <Typography fontWeight="bold" variant="h5" style={{display: "flex", justifyContent: "center", alignItems: "center"}}>We are on a mission to reinvent meal delivery</Typography>
+            <img src={TeamPic} className="photo" alt={"TeamPic"}/> 
+        </Paper>
       </div>
     );
   }
